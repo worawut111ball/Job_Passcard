@@ -1,0 +1,188 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Passcard | MyCart</title>
+  <link rel="stylesheet" href="./header.css">
+  <link rel="stylesheet" href="./main.css">
+  <!-- icon header browser -->
+  <link rel="shortcut icon" href="./static/images/jobpasscard_logo.png" type="image/x-icon">
+  
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;800&family=Noto+Sans+Thai:wght@100;300;400&family=Poppins:wght@700;800&family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/cfb4497599.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+  <header class="header">
+    <nav>
+      <!-- <div class="nav-menu-button">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <div class="container" onclick="myMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </a>
+      </div> -->
+      <div class="logo">
+        <a href="index.html"><img src="logo.png" alt="Logo" width="250" height="80">
+          
+        </a>
+      </div>
+      <div class="nav-center">
+        <a href="#About us">ABOUT US</a>
+        <a href="#Passcard">PASSCARD</a>
+        <a href="#Profile">PROFILE</a>
+      </div>
+      
+      <div class="nav-right">
+        <a href="#search"><img class="search" src="./search.png" alt=""></a>
+        <a href="#cart" class="cart-circle"><img class="cart" src="./cart.png" alt=""></a>
+        <a href=""><p class="font"><b> LOGIN </b></p></a>
+        <b> | </b>
+      <a href=""><p class="font"><b> SIGN UP </b></p></a>
+      </div>
+
+    </nav>
+
+
+
+    <!-- Navbar Responsive -->
+    <div class="nav-button" id="myTopnav">
+      <a href="#About us">ABOUT US</a>
+      <a href="#Passcard">PASSCARD</a>
+      <a href="#Profile" style="margin-bottom: 60px;">PROFILE</a>
+      <div class="nav-res-t">
+        <a href="#Login">
+          <p class="login">LOGIN</p>
+        </a>
+        <a href="#Sign up">
+          <p class="signup">SIGN UP</p>
+        </a>
+      </div>
+    </div>
+
+
+  </header>
+
+
+
+  <main>
+    <div class="area-top">
+      <p class="font"><h1>My Cart</h1></p>
+  </div>
+
+  
+  <div class="area">
+    <div class="area-left">
+        <div class="Docs">
+            <a href="#delete"><div class="bin"><img src="./bin.png" alt=""></div></a>
+            <div class="file1">
+                <div class="file"><img src="./fileblue.png" alt=""></div>
+                <p class="font"><b class="P1">Google Docs</b></p>
+                <p class="font">Used for business</p>
+            </div>
+            <div class="Google">
+                <p class="font">Google Docs</p>
+                <div class="nav">
+                    <div class="status-circle-container">
+                        <div class="status-circle circle-level-1"></div>
+                        <div class="status-circle circle-level-2"></div>
+                        <div class="status-circle circle-level-3"></div>
+                    </div>
+                    <select>
+                        <option>LV 1-3</option>
+                        <option>LV 2-3</option>
+                        <option>LV 3-3</option>
+                    </select>
+                </div>
+                <div class="THB">
+                    <p>THB 0</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="Slides">
+          <a href="#delete"><div class="bin"><img src="./bin.png" alt=""></div></a>
+          <div class="file2">
+              <div class="file"><img src="./file.png" alt=""></div>
+              <p class="font"><b class="P1">Google Slides</b></p>
+              <p class="font">Used for business</p>
+          </div>
+          <div class="Google">
+              <p class="font">Google Slides</p>
+              <div class="nav2">
+                  <div class="status-circle-container2">
+                      <div class="status-circle2 circle-level2-1"></div>
+                      <div class="status-circle2 circle-level2-2"></div>
+                      <div class="status-circle2 circle-level2-3"></div>
+                      <div class="status-circle2 circle-level2-4"></div>
+                  </div>
+                  <select>
+                      <option><b>LV 1/4</b></option>
+                      <option><b>LV 2/4</b></option>
+                      <option><b>LV 3/4</b></option>
+                      <option><b>LV 4/4</b></option>
+                  </select>
+              </div>
+              <div class="THB">
+                  <p>THB 0</p>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  <div class="area-right">
+      <div class="right-area">
+          <div class="right0">
+              <div class="font">
+                  <p>Order Info</p>
+              </div>
+          </div>
+          <div class="right1">
+              <div class="font">
+                  <p>Subtotal</p>
+              </div>
+              <div class="THB">
+                  <b>THB 0</b>
+              </div>
+          </div>
+          <div class="right2">
+              <img src="./coupon.png" alt="">
+              <input type="text" placeholder="Promotion code" id="promoInput">
+              <button class="apply-button" onclick="applyPromotion()">APPLY</button>
+          </div>
+          <hr>
+          <div class="right3">
+              <div class="font">
+                  <p>Total paymemt</p>
+              </div>
+              <div class="THB"><b>THB 0</b></div>
+          </div>
+          <div class="right4">
+              <button class="apply-button2"><b>LOG IN TO CHECKOUT</b></button>
+
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+
+
+</main>
+
+
+
+
+
+</body>
+
+</html>
+
+   
